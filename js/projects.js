@@ -15,7 +15,7 @@ function Project(name, img, link, blurb) {
 					
 		new Project('jFinder 2018', 
 					'images/royals.jpg', 
-					'https://j-finder.com',
+					'https://ronerlih.github.io/jFinder/',
 					'Use machine-learning to find out how Jewish you look!<br>Trained on over 6000 images and tested on 1500 samples with 91.08% accuracy.<br>*coming soon<br>'),
 					
 	new Project('youtube improv 2018', 
