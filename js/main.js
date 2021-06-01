@@ -10,7 +10,7 @@ function init(){
 		
 		let projElement = document.createElement('div');
 		projElement.className = 'project-container';
-		projElement.innerHTML = '<a ' + link + ' ><div class="project-div"><img onload="imgLoad()" class="project-vinyet" src=' + 
+		projElement.innerHTML = '<a ' + link + ' ><div class="project-div"><img onload="imgLoad()" onerror="imgLoad()" class="project-vinyet" src=' + 
 										proj.img + ' ><div class="project-name">' + 
 										proj.name + '</div><div class="blurb">' + 
 										proj.blurb + '</div></div><div onmouseover="hover(this)" onmouseout="hoverOut(this)" class="project-overlay"></div></a>';
@@ -22,12 +22,8 @@ function init(){
 }
 
 function hover(elem){
-//		elem.style.opacity = .2;
 		elem.style.opacity = 1;
-		// elem.style.cursor = "url(../css/cursor.cur), none;"
-		// elem.style.borderBottom = '1px solid';
 		console.log('in hover')
-//		elem.style.borderBottomStyle = 'outset';
 }
 function hoverOut(elem){
 		elem.style.opacity = 0;
@@ -36,13 +32,14 @@ function hoverOut(elem){
 function loaded(){
 setTimeout(()=>{
 	document.getElementById('loading-screen').style.display = 'none';
-},1000 + startTime - new Date().getTime());
+},0);
 //console.log('startTime: ' + startTime);
 
 }
 function imgLoad(){
+
 loadedLength++;
-if(loadedLength == projectLength || new Date().getTime() > startTime + 3000	){loaded()}
+if(loadedLength === projectLength || performance.now() > 3000	){loaded()}
 }
 
 document.addEventListener("DOMContentLoaded", init());

@@ -8,6 +8,11 @@ function Project(name, img, link, blurb) {
 }
 
 	let projects = [
+		new Project('Farewell 2020', 
+					'https://ronerlihstudio.com/images/202020.gif', 
+					'https://ronerlih.github.io/2020/',
+					'A 3D scene (you can scroll your mouse)'),
+					
 		new Project('jFinder 2018', 
 					'images/royals.jpg', 
 					'https://j-finder.com',
@@ -19,7 +24,7 @@ function Project(name, img, link, blurb) {
 					'Random and synched YouTube results are played and paused, creating a score for the dancers to work with on stage. with Brittay Engel-Adams'),
 	
 new Project('emojiMandala.net 2017', 
-					'https://s3.amazonaws.com/ronerlihstudio.com/images/emojiMandala-light.jpg', 
+					'images/emojiMandala-light.jpg', 
 					'http://emojiMandala.net',
 					'A Universal pictography meditation.<br><br>'),
 	
