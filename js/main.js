@@ -1,8 +1,23 @@
 let projectLength = projects.length;
 let loadedLength = 0;
 const startTime = new Date().getTime();
+
+function dropSvg(e) {
+   if (e.target.matches(".github-link, .github-link *, .social a * "))
+      e.target.closest("a").querySelector(".gradient-initial").style.opacity = 0;
+}
+function showSvg(e) {
+   if (e.target.matches(".github-link, .github-link *, .social a *"))
+      e.target.closest("a").querySelector(".gradient-initial").style.opacity = 1;
+}
+
+
 function init(){
 	let hook = document.getElementById('content');
+
+   document.body.onmouseover = dropSvg;
+   document.body.onmouseout = showSvg;
+
 	//cycle elements
 	projects.forEach((proj)=>{
 		let link = 'href=""';

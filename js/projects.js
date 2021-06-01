@@ -28,7 +28,7 @@ new Project('emojiMandala.net 2017',
 					'http://emojiMandala.net',
 					'A Universal pictography meditation.<br><br>'),
 	
-	new Project('googleMirror.net 2016', 
+	new Project('🌟googleMirror.net 2016', 
 					'https://s3-us-west-2.amazonaws.com/ronerlih.com/resources/GoogleMirror/12z01beings+3.jpg', 
 					'http://googlemirror.net',
 					'See your Google reflection, similar image engine.<br>'),
