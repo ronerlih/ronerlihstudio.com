@@ -38,7 +38,6 @@ function init(){
 
 function hover(elem){
 		elem.style.opacity = 1;
-		console.log('in hover')
 }
 function hoverOut(elem){
 		elem.style.opacity = 0;
