@@ -126,6 +126,7 @@ a {
 .nft {
    border: 8px dashed #31bbaf;
    padding: 8px;
+   height: 190px;
 }
 .github-link {
    cursor: pointer;
@@ -292,6 +293,9 @@ a {
       height: auto;
       display: inline-block;
       max-width: 2000px;
+   }
+   .nft {
+      width:  calc(100vw - 50px);
    }
    .project-container {
       width: calc(100vw - 42px);

@@ -9,7 +9,7 @@ function Project(name, img, link, blurb, nft = false) {
 }
 
 	let projects = [
-		new Project('EmojiMandala NFT Collection', 
+		new Project('EmojiMandala NFT <br/>Collection', 
 					'https://ronerlihstudio.com/Images/emoji-mandala-nft.png', 
 					'https://nft.emojimandala.net/',
 					"💎 To the NFT store",
