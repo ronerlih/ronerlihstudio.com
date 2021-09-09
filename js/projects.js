@@ -17,12 +17,7 @@ function Project(name, img, link, blurb) {
 					'https://ronerlihstudio.com/images/HandDanceImage.jpeg', 
 					'https://www.guggenheim.org/initiatives/works-process/virtual-commissions',
 					"A dance film using mechine learning to overlay hands from th original public datasets. Commissioned by The Guggenheim Works and Process."),
-					
-		new Project('Farewell 2020', 
-					'https://ronerlihstudio.com/images/202020.gif', 
-					'https://ronerlih.github.io/2020/',
-					'A 3D scene (you can scroll your mouse)'),
-					
+	
 		new Project('Farewell 2020', 
 					'https://ronerlihstudio.com/images/202020.gif', 
 					'https://ronerlih.github.io/2020/',
