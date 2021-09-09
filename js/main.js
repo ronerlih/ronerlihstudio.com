@@ -25,8 +25,8 @@ function init(){
 		
 		let projElement = document.createElement('div');
 		projElement.className = 'project-container';
-		projElement.innerHTML = '<a ' + link + ' ><div class="project-div"><img onload="imgLoad()" onerror="imgLoad()" class="project-vinyet" src=' + 
-										proj.img + ' ><div class="project-name">' + 
+		projElement.innerHTML = '<a ' + link + ` ><div class="project-div"><img onload="imgLoad()" onerror="imgLoad()" class="project-vinyet  ${proj.nft ? 'nft' : ''}" src=` + 
+										proj.img + ` ><div class="project-name">` + 
 										proj.name + '</div><div class="blurb">' + 
 										proj.blurb + '</div></div><div onmouseover="hover(this)" onmouseout="hoverOut(this)" class="project-overlay"></div></a>';
 

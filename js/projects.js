@@ -1,22 +1,24 @@
 
-function Project(name, img, link, blurb) {
+function Project(name, img, link, blurb, nft = false) {
     this.name = name;
     this.img = img;
     this.link = link;
     this.blurb = blurb;
+    this.nft = nft;
 	 
 }
 
 	let projects = [
-		new Project('Hand Dance 2020', 
+		new Project('EmojiMandala NFT Collection', 
 					'https://ronerlihstudio.com/Images/emoji-mandala-nft.png', 
 					'https://nft.emojimandala.net/',
-					"💎 To the NFT store"),
+					"💎 To the NFT store",
+               true),
 					
 		new Project('Hand Dance 2020', 
-					'https://ronerlihstudio.com/Images/HandDanceImage.jpeg', 
+					'images/hand-dance-thumb.png', 
 					'https://www.guggenheim.org/initiatives/works-process/virtual-commissions',
-					"A dance film using mechine learning to overlay hands from th original public datasets. Commissioned by The Guggenheim Works and Process."),
+					"A dance film using machine learning to overlay hands from th original public datasets. Commissioned by The Guggenheim Works and Process."),
 	
 		new Project('Farewell 2020', 
 					'https://ronerlihstudio.com/images/202020.gif', 
