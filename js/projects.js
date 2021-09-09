@@ -16,7 +16,7 @@ function Project(name, img, link, blurb, nft = false) {
                true),
 					
 		new Project('Hand Dance 2020', 
-					'images/hand-dance-thumb.png', 
+					'https://ronerlihstudio.com/Images/hand-dance-thumb.png', 
 					'https://www.guggenheim.org/initiatives/works-process/virtual-commissions',
 					"A dance film using machine learning to overlay hands from th original public datasets. Commissioned by The Guggenheim Works and Process."),
 	
